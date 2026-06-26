@@ -427,3 +427,26 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-links svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  flex: 0 0 auto;
+}
+
+.contact-links a[href*="github"] svg {
+  fill: currentColor;
+  stroke: none;
+}
