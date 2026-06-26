@@ -494,3 +494,55 @@ p {
   font-weight: 500;
   overflow-wrap: anywhere;
 }
+
+.education-section {
+  padding-top: 34px;
+}
+
+.education-list {
+  display: grid;
+  gap: 16px;
+}
+
+.education-item {
+  padding: 24px;
+  background: rgba(255, 253, 248, 0.9);
+  border: 1px solid rgba(222, 214, 201, 0.95);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.education-item dl {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+}
+
+.education-item dl div {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.education-item dt {
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.education-item dd {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 620px) {
+  .education-item dl div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
