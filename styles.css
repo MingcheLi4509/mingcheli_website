@@ -178,17 +178,29 @@ p {
   padding: 24px;
 }
 
+.portrait-placeholder,
+.portrait-photo {
+  aspect-ratio: 1;
+  border-radius: var(--radius);
+}
+
 .portrait-placeholder {
   display: grid;
   place-items: center;
-  aspect-ratio: 1;
   color: #fff;
   background:
     linear-gradient(135deg, rgba(13, 148, 136, 0.95), rgba(194, 133, 45, 0.9)),
     #0d9488;
-  border-radius: var(--radius);
   font-size: clamp(4rem, 10vw, 7rem);
   font-weight: 900;
+}
+
+.portrait-photo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  border: 1px solid rgba(217, 222, 231, 0.9);
 }
 
 .panel-label,
